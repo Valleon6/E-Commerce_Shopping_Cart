@@ -7,7 +7,7 @@
 <title>Cart page  </title>
 </head>
 <body>
-<h1>Hello World and Valleon</h1>
+<%@include file = "includes/navBar.jsp"%>
 </body>
 </html>
 <%@include file= "includes/footer.jsp" %>

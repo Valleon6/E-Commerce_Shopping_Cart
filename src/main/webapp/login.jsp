@@ -7,11 +7,12 @@
 <title>Shopping cart Login</title>
 </head>
 <body>
+<%@include file = "includes/navBar.jsp"%>
 <div class="container">
 		<div class="card w-30 mx-auto my-5">
 			<div class="card-header text-center">User Login</div>
 			<div class="card-body">
-				<form action="" method="post">
+				<form action="user-login" method="post">
 
 					<div class="form-group">
 						<label>Email Address</label> <input type="email"
