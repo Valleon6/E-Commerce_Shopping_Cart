@@ -37,7 +37,6 @@ public class LoginServlet extends HttpServlet {
 				UserDao udao = new UserDao(DbCon.getConnection());
 				User user = udao.userLogin(email, password);
 			
-				
 				if(user != null) {
 					request.getSession().setAttribute("auth", user);
 					response.sendRedirect("index.jsp");

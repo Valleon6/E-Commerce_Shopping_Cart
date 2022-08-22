@@ -1,8 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@page import="cn.valentine.model.*"%>
+    
+    <%
+User auth = (User) request.getSession().getAttribute("auth");
+if (auth != null) {
+response.sendRedirect("index.jsp");
+}
+%>
+
+
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 <%@include file= "includes/header.jsp" %>
 <title>Shopping cart Login</title>
 </head>
